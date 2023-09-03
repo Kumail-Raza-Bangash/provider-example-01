@@ -16,28 +16,32 @@ class ItemList extends StatelessWidget {
             onLongPress: () => data.removeItem(item),
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 5),
-              child: ListTile(
-                leading: CircleAvatar(
-                  backgroundColor: Colors.blueGrey,
-                  child: Text(item.item[0]),
-                ),
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      item.item,
-                      style: TextStyle(
-                          decoration: item.completed
-                              ? TextDecoration.lineThrough
-                              : null,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Checkbox(
-                      value: item.completed,
-                      onChanged: (c) => data.toggleItem(item),
-                    ),
-                  ],
+              child: Card(
+                color: Colors.orangeAccent[100],
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Colors.orange,
+                    foregroundColor: Colors.white,
+                    child: Text(item.item[0]),
+                  ),
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        item.item,
+                        style: TextStyle(
+                            decoration: item.completed
+                                ? TextDecoration.lineThrough
+                                : null,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Checkbox(
+                        value: item.completed,
+                        onChanged: (c) => data.toggleItem(item),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

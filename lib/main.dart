@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       create: (context) => ItemData(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Provider Demo',
+        title: 'Provider Todo',
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.orange,
         ),
         home: Home(),
       ),

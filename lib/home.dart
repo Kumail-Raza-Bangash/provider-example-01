@@ -8,11 +8,13 @@ class Home extends StatelessWidget {
   // Controller for the text input field
   final TextEditingController _textEditingController = TextEditingController();
 
+  Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Item List'),
+        title: const Text('Provider Todo App', style: TextStyle(color: Colors.white),),
       ),
       body: Column(
         children: <Widget>[
@@ -20,8 +22,8 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: TextField(
               controller: _textEditingController,
-              decoration: InputDecoration(
-                hintText: 'Enter an item',
+              decoration: const InputDecoration(
+                hintText: 'Enter Something...',
               ),
             ),
           ),
@@ -35,7 +37,7 @@ class Home extends StatelessWidget {
                 _textEditingController.clear();
               }
             },
-            child: Text('Add Item'),
+            child: const Text('Add'),
           ),
           Expanded(
             child: ItemList(),
