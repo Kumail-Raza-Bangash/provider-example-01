@@ -1,16 +1,32 @@
-# provider_example_01
+# Todo App with FLutter and Provider
+This is a simple Todo App built using Flutter framework by Kumail Raza. The app allows you to create and manage your daily tasks, keeping you organized and productive.
 
-A new Flutter project.
+## Features
+- Mark tasks as completed 
 
-## Getting Started
+## Technologies used
+- Flutter 
+- Dart
+- Provider 
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![1](https://github.com/Kumail-Raza-Bangash/provider-example-01/assets/60749099/ffe8e241-d0a8-4c4e-b557-b5bf7ec0c036)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![2](https://github.com/Kumail-Raza-Bangash/provider-example-01/assets/60749099/75db1afc-2a0f-489d-ba51-6e6219e336bf)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## How to use
+To run the app on your local machine, follow these steps:
+
+1. Clone this repository: **git clone [https://github.com/Kumail-Raza-Bangash/Flutter-Todo-App.git](https://github.com/Kumail-Raza-Bangash/provider-example-01)**
+2. Navigate to the project directory: **cd flutter-todo-app**
+3. Install dependencies: **flutter pub get**
+4. Run the app: **flutter run**
+
+
+## Contributions
+Contributions to this project are welcome. Feel free to create a pull request or submit an issue if you find a bug or have a feature request.
+
+
+
